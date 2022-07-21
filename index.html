@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine-Sweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame()">
+    <div class="smiley-container"> </div><button class="smiley" onclick="initGame()"></button>
+    <div>
+        <button onclick=changeDiff(this) class="easy">Easy
+        </button>
+        <button onclick=changeDiff(this) class="medium">Medium
+        </button>
+        <button onclick=changeDiff(this) class="hard">Hard
+        </button>
+    </div>
+    <table class="additives">
+        <tbody>
+            <tr>
+                <td><div class="custom-modal">You cannot press Custom Mode again</div></td>
+                <td><h2 class="flag-counter"><span></span> 🚩</h2></td>
+                <td><div class="custom-mode-container"><button class="custom-mode" onclick="customMode(this)">Click Here to place the bombs yourself!</button></div></td>
+                <td class="safe-container" ><span></span> safe clicks left <button class="safe-click" onclick="showSafeCell()">Safe Spot</button></td>
+            </tr>
+            <tr>
+                <td><div class="hint-container">
+                    <button class="hint hint1" onclick="useHint()">💡</button>
+                    <button class="hint hint2" onclick="useHint()">💡</button>
+                    <button class="hint hint3" onclick="useHint()">💡</button>
+                </div></td>
+                <td><h2 class="score-container">The best Score in this Difficulty: <span></span></h2></td>
+                <td><h2 class="modal-lives">you pressed on a bomb!!</h2>
+                    <h2 class="lives-counter">You have <span></span> ❤️ left</h2></td>
+                    <td><button class="undo" onclick="undoButton()">UNDO</button></td>
+            </tr>
+            <tr> <h2 class="timer">Your time is: <span></span></h2></tr>
+        </tbody>
+    </table>
+    <table>
+        <tbody class="game-board"></tbody>
+    </table>
+    <script>src = "js/utils.js"</script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

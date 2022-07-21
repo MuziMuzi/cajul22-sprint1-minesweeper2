@@ -1,0 +1,95 @@
+body {
+    text-align: center;
+    background-image: url('sprint1background.jpg');
+}
+
+table {
+    margin: auto;
+}
+.undo{
+    font-size: 1.5em;
+    height: 50px;
+    background-color: #fddd4dec;
+    border-radius: 12%;
+}
+.smiley{
+    background-color: rgba(255, 251, 251, 0);
+    border:none;
+}
+.custom-mode{
+    height: 60px;
+    width: 125px;
+    border-radius: 13%;
+    background-color: #d93050;
+}
+.additives{
+    background-color: rgba(255, 251, 251, 0.4);
+    width: 700px;
+    height: 100px
+}
+.additives{
+    height: 75px;
+}
+.score-container{
+    width: 190px;
+}
+
+.game-board{
+    background-color: rgb(216, 216, 218);
+}
+.safe-click{
+    background-color: rgb(164 217 103);
+    height: 40px;
+    font-size: large;
+    border-radius: 13%;
+}
+
+.cell {
+    border: rgb(151, 106, 194) border-radius: 7%;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    cursor: grab;
+    background-color: rgba(216, 216, 218, 0.856);
+}
+.safe-container{
+    font-size: 1.2em;
+}
+.hint{
+    display: inline;
+    height: 65px;
+    width: 45px;
+    font-size: xxx-large;
+    background-color: rgb(216, 216, 218,0);
+    border:none;
+
+}
+.smiley {
+    text-align: center;
+    margin: auto;
+    font-size: 100px;
+    background-color: rgba(255, 251, 251, 0);
+    border:none;
+}
+
+.smiley-container {
+    margin: auto;
+}
+
+.modal-lives {
+    display: none;
+
+}
+
+.shown {
+    background-color: rgb(232, 248, 253);
+}
+
+.custom-modal {
+    display: none;
+    height: 60px;
+    width: 125px;
+    background-color: #d93050;
+    border-radius: 13%;
+
+}
